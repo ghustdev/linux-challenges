@@ -40,13 +40,15 @@
 
 Básicos:
 
-- gustavo@gustavo-IdeaPad-Gaming-3-15IMH05:~$  : user comum ($), user root (#)
-- adduser
 - !! - usa comando anterior
 - ls - listar
 - ls -l -h OU ls -lh: ver informações detalhadas e humanizadas
 - ls -a - listar todos até ocultso
 - ls -R
+- history - hirtorico do terminal
+- lscpu - informaçoes extras
+- lscpi
+- lsblk
 - tree
 - cd ~: volta para a homa
 - cd -: volta para o diretório anterior
@@ -69,11 +71,10 @@ Arquivos e Diretórios:
 - cp <nome_arquivo> ~/<pasta> - copiar arquivos
 - cp -r: copis diretorios e toda estrutura
 - pwd - imprime diretório de trabalho/atual
+- >> - pegar informações e joga para algum arquivo
 
 Gerenciamento de Pacotes:
 
-- su / sudo su - entrar no super user → Ctrl + D para sair
-- sudo - atribui o super user
 - apt-get / apt
 - apt-get - remove, atualiza e baixa pacotes, apenas adms / super user
 - sudo apt-get update - atualiza todos os repositórios
@@ -112,6 +113,35 @@ Nano:
 - Alt + / - vai para o fim do arquivo
 - Alt + \ - vai para o inicio
 - Alt + g - vai para linha especifica
+
+Gerenciamento de Usuários
+
+- sudo adduser <nome> - apenas como admin
+- sudo userdel —remove <nome>
+- usdo usermod -c “novo” <nome> - alterar nome de usuario de display
+- usermod -l <nome> -d <caminho> - alterar display e diretório
+- sudo usermod -L - desabilitar usuário
+- sudo usermod -U- desbloquear usuário
+- su / sudo su - entrar no super user → Ctrl + D para sair
+- sudo - atribui o super user
+- gustavo@gustavo-IdeaPad-Gaming-3-15IMH05:~$  : user comum ($), user root (#)
+- passwd - alterar a senha
+
+Gerenciamento de Permissões
+
+- 
+
+- whoami - quem sou / user
+- hostname - nome da máquina atural
+- hostname -I - IP da maquina
+- hostnmae —help
+- ip a - tudo sobre IP
+- free -h - visualizar espaço de memoria
+- htop - informações e processos
+- ps aux | <nome> - processos do pc rodando
+- kill - acaba com processos / programas
+- ncdu - utilitário para vizualizar espaço livre de memoria, seu local e permitir apagar (tecla Delete)
+- uname -r - versao kernel
 
 Linux Cheat Sheet
 <img width="2551" height="3301" alt="image" src="https://github.com/user-attachments/assets/8590681f-ff0f-454b-93df-d7dce95c0cc6" />
