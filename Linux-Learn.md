@@ -129,19 +129,55 @@ Gerenciamento de Usuários
 
 Gerenciamento de Permissões
 
-- 
+- Possibilita alterar entre 3 propriedades de arquivos e diretórios
+    - Read - R
+    - Write - W
+    - Execute - X
+    - “-” - sem permissão
 
-- whoami - quem sou / user
+![Captura de tela de 2026-02-07 19-10-30.png](attachment:2cc0d95e-1d51-47e4-88ac-22d31fd98c1d:Captura_de_tela_de_2026-02-07_19-10-30.png)
+<img width="1030" height="395" alt="image" src="https://github.com/user-attachments/assets/2690b58d-c838-465e-b365-2da06c7981c6" />
+
+
+- d OU “-”- diretório / arquivo
+- chmod xxx (dono, grupo, não grupo) file/dir - alterar a permissão
+    - Modo numérico:
+    
+    ![Captura de tela de 2026-02-07 19-20-39.png](attachment:aec14656-b565-40e4-b69a-097b023247c0:Captura_de_tela_de_2026-02-07_19-20-39.png)
+  <img width="777" height="438" alt="image" src="https://github.com/user-attachments/assets/3b331555-a6f0-46b1-8af1-2ac4c71b7fe3" />
+
+    
+    ![Captura de tela de 2026-02-07 19-22-37.png](attachment:b10af533-9636-4371-a50b-11e1ca6a5f4f:Captura_de_tela_de_2026-02-07_19-22-37.png)
+  <img width="599" height="133" alt="image" src="https://github.com/user-attachments/assets/e876aa07-d3f0-4b1f-9fc8-b35d253d7c72" />
+
+    
+    ![Captura de tela de 2026-02-07 19-23-30.png](attachment:123d4a41-877f-4657-9e8a-bdbf724ab5ff:Captura_de_tela_de_2026-02-07_19-23-30.png)
+  <img width="611" height="87" alt="image" src="https://github.com/user-attachments/assets/500b175c-ced7-462f-91d3-5a0fbe379254" />
+
+    
+- chown - altera owner do file/dir
+
+Gerenciamento de Rede:
+
+- ping - testar conexão (com DNSs ou IPs)
+- netstat - ver estatísticasda rede
+- netstat -at - apenas tcp
+- netstat -au - apenas udp
+- ifconfig - ocnfigurações de interface e conexão
+- nslookup - verificar DNSs
+- tcpdump - ver coneões tcp
+- hostnmae —help
 - hostname - nome da máquina atural
 - hostname -I - IP da maquina
-- hostnmae —help
 - ip a - tudo sobre IP
+
+Extras:
+
 - free -h - visualizar espaço de memoria
 - htop - informações e processos
 - ps aux | <nome> - processos do pc rodando
 - kill - acaba com processos / programas
 - ncdu - utilitário para vizualizar espaço livre de memoria, seu local e permitir apagar (tecla Delete)
 - uname -r - versao kernel
-
 Linux Cheat Sheet
 <img width="2551" height="3301" alt="image" src="https://github.com/user-attachments/assets/8590681f-ff0f-454b-93df-d7dce95c0cc6" />
