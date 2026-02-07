@@ -6,7 +6,7 @@
 - Linux = Tecnologia, não um SO, é um motor
 - Por isso, surgem as Distros, SO montado emcima do Kernel
 
-## Linux Mint (distro que uso)
+## Linux Mint
 
 - Kernel Linux 5.2
 - Novas Versões dos Drivers
@@ -41,10 +41,13 @@
 Básicos:
 
 - gustavo@gustavo-IdeaPad-Gaming-3-15IMH05:~$  : user comum ($), user root (#)
+- adduser
+- !! - usa comando anterior
 - ls - listar
 - ls -l -h OU ls -lh: ver informações detalhadas e humanizadas
 - ls -a - listar todos até ocultso
 - ls -R
+- tree
 - cd ~: volta para a homa
 - cd -: volta para o diretório anterior
 - cd ..
@@ -53,7 +56,7 @@ Básicos:
 - cat <arquivo> > <arquivo>: cria ou passa o conteúdo da esqueda para a direita
 - <comando> —help - informações desse comando
 
-Aruivos e Diretórios:
+Arquivos e Diretórios:
 
 - mkdir - make dirmkdir -p: permite criar dir mais complexos
 - mkdir -v: verbose - permite ver o q o comando faz
@@ -75,7 +78,40 @@ Gerenciamento de Pacotes:
 - apt-get - remove, atualiza e baixa pacotes, apenas adms / super user
 - sudo apt-get update - atualiza todos os repositórios
 - sudo apt-get upgrade -y - atualiza todos os aplicativos / pacotes com permissão
-- sudo apt-get install
+- sudo apt-get install <pacote>
+- sudo apt-get p**ur**ge <pacote> - limpar / purgar
+- sudo apt-get dist-upgrade - não use para atualizar o sistema da distro
+- sudo apt-get autoremove - remove pacotes desatualizados e desnecessaŕios, sempre use
+- apt-cache search <pacote> - pesquisa esse pacote e tudo relacionado
+
+Filtros e Buscas
+
+- tail e head - ler uma parte do arquivo, cima ou baixo
+- head -n 1 - ve apenas 1 linha de cima para baixo, e assim por diante
+- tail -n 1 - ve apenas 1 linha de baixo para cima, e assim por diante
+- tail -f - mostra atualizações automáticas, bom para debug de logs
+- less abre arquivo de forma paginada
+- grep -i <busca> <arquivo> - busca em arquivos sem case sensitive
+- grep -c <busca> <arquivo> - qtd de ocorrencias
+- grep <busca> -r - busca recursiva em todos os diretorios / arquivos
+- ip a | grep <nome para filtrar> - grep faz um filtro no nome do texto que irá aparecer ao digitar o comando ip a
+- find -name - encontrar arquivos em diretórios → . (esse diratório) ou simplesmente digita o nome do diretório; *nome* tudo q tiver isso no nome
+- find -iname <busca*> - sem case sensitive e independente do tipo
+- find -empty - busca dir vazios
+- find . -name "*.doc" -type f (file ou d para diretório) -delete - remove todos os arquivos com “.doc”
+- locate <arquivo> - acha todos os aruivos
+- locate -S - qtd de dados
+- which - de onde um ocmando é executado
+
+Nano:
+
+- nano
+- sudo nano /etc/default/grub
+- sudo update-grub - atualziar o grub
+    - atividade: alterar o tema do GRUB usando nano e Bash
+- Alt + / - vai para o fim do arquivo
+- Alt + \ - vai para o inicio
+- Alt + g - vai para linha especifica
 
 Linux Cheat Sheet
 <img width="2551" height="3301" alt="image" src="https://github.com/user-attachments/assets/8590681f-ff0f-454b-93df-d7dce95c0cc6" />
