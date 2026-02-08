@@ -9,7 +9,7 @@ Sistema de automação para tarefas cotidianas do ACZG.
 
 ### Comandos:
 - `aczgnew [caminho] [nome]`: Cria projeto, README e inicia Git.
-- `aczginit [nome_feature]`: Cria branch `feat-nome`.
+- `aczginit [nome_feature]`: Cria branch `nome_feature`.
 - `aczgfinish`: Mergeia na master, deleta a branch e limpa o remoto.
 - `aczgci "[cron]"`: Configura o pipeline de testes/compilação Java.
 - `aczglogs`: Mostra o histórico de execuções.
