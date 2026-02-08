@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# declare STRING variable
+STRING="Hello World"
+
+STRING_TESTE="Teste"
+
+# print variable on a screen
+echo $STRING
+
+echo $STRING_TESTE
