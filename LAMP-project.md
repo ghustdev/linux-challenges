@@ -1,3 +1,3 @@
-## Proejto: Configurando o LAMP
+## Projeto: Configurando o LAMP
 
-INstalando Apache, PHP e MySQL e testanco comunicação entre eles
+Instalando o LAMP (Linux, Apache, MySQL e PHP) e testanco comunicação entre eles
