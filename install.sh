@@ -22,4 +22,4 @@ alias aczgci='$INSTALL_DIR/ci_pipeline.sh'
 # ACZG_END
 EOF
 
-echo "✨ Tudo configurado! Reinicie o terminal ou use: source $SHELL_RC"
+echo "Tudo configurado! Reinicie o terminal ou use: source $SHELL_RC"
